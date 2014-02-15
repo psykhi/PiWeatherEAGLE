@@ -102,9 +102,9 @@
 <pad name="GND" x="-5.08" y="-3.81" drill="0.8" shape="square"/>
 <pad name="VCC" x="-5.08" y="-6.35" drill="0.8" shape="square"/>
 <wire x1="-6.35" y1="7.62" x2="-6.35" y2="-7.62" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-7.62" x2="7.62" y2="-7.62" width="0.127" layer="51"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.127" layer="51"/>
-<wire x1="7.62" y1="7.62" x2="-6.35" y2="7.62" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-7.62" x2="8.89" y2="-7.62" width="0.127" layer="51"/>
+<wire x1="8.89" y1="-7.62" x2="8.89" y2="7.62" width="0.127" layer="51"/>
+<wire x1="8.89" y1="7.62" x2="-6.35" y2="7.62" width="0.127" layer="51"/>
 <text x="-2.54" y="8.89" size="1.27" layer="25">BMP085</text>
 </package>
 <package name="DHT22">
@@ -117,6 +117,7 @@
 <wire x1="1.27" y1="-3.81" x2="-6.35" y2="-3.81" width="0.127" layer="51"/>
 <wire x1="-6.35" y1="-3.81" x2="-6.35" y2="11.43" width="0.127" layer="51"/>
 <text x="-5.08" y="11.43" size="1.27" layer="25">DHT22</text>
+<dimension x1="-11.43" y1="11.43" x2="-11.43" y2="-3.81" x3="-12.7" y3="3.81" textsize="1.27" layer="21"/>
 </package>
 <package name="NRF24L01">
 <pad name="VCC1" x="-16.51" y="5.08" drill="0.8" shape="square"/>
@@ -129,11 +130,13 @@
 <pad name="MISO" x="-16.51" y="-2.54" drill="0.8" shape="square"/>
 <pad name="GND1" x="-16.51" y="-5.08" drill="0.8" shape="square"/>
 <pad name="GND2" x="-13.97" y="-5.08" drill="0.8" shape="square"/>
-<wire x1="-17.78" y1="6.35" x2="17.78" y2="6.35" width="0.127" layer="51"/>
-<wire x1="17.78" y1="6.35" x2="17.78" y2="-6.35" width="0.127" layer="51"/>
-<wire x1="17.78" y1="-6.35" x2="-17.78" y2="-6.35" width="0.127" layer="51"/>
-<wire x1="-17.78" y1="-6.35" x2="-17.78" y2="6.35" width="0.127" layer="51"/>
+<wire x1="-17.78" y1="6.985" x2="15.875" y2="6.985" width="0.127" layer="51"/>
+<wire x1="15.875" y1="6.985" x2="15.875" y2="-6.985" width="0.127" layer="51"/>
+<wire x1="15.875" y1="-6.985" x2="-17.78" y2="-6.985" width="0.127" layer="51"/>
+<wire x1="-17.78" y1="-6.985" x2="-17.78" y2="6.985" width="0.127" layer="51"/>
 <text x="-6.35" y="7.62" size="1.27" layer="51">nRF24L01+</text>
+<dimension x1="-17.78" y1="6.35" x2="-17.78" y2="-6.35" x3="-22.86" y3="0" textsize="1.27" layer="21"/>
+<dimension x1="-17.78" y1="-6.985" x2="15.875" y2="-6.985" x3="-0.9525" y3="-10.795" textsize="1.27" layer="21"/>
 </package>
 <package name="RGB_LED">
 <pad name="RED" x="0" y="3.81" drill="0.8" shape="square"/>
@@ -168,14 +171,16 @@
 <text x="-2.54" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="NCP1402">
-<pad name="GND" x="-2.54" y="2.54" drill="0.8" shape="square"/>
-<pad name="3.3V" x="-2.54" y="0" drill="0.8" shape="square"/>
-<pad name="VCC" x="-2.54" y="-2.54" drill="0.8" shape="square"/>
-<wire x1="-3.81" y1="3.81" x2="-3.81" y2="-3.81" width="0.127" layer="51"/>
-<wire x1="-3.81" y1="-3.81" x2="6.35" y2="-3.81" width="0.127" layer="51"/>
-<wire x1="6.35" y1="-3.81" x2="6.35" y2="3.81" width="0.127" layer="51"/>
-<wire x1="6.35" y1="3.81" x2="-3.81" y2="3.81" width="0.127" layer="51"/>
-<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<pad name="GND" x="-2.54" y="1.905" drill="0.8" shape="square"/>
+<pad name="3.3V" x="-2.54" y="-0.635" drill="0.8" shape="square"/>
+<pad name="VCC" x="-2.54" y="-3.175" drill="0.8" shape="square"/>
+<wire x1="-3.81" y1="6.35" x2="-3.81" y2="-6.985" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-6.985" x2="12.7" y2="-6.985" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-6.985" x2="12.7" y2="6.35" width="0.127" layer="51"/>
+<wire x1="12.7" y1="6.35" x2="-3.81" y2="6.35" width="0.127" layer="51"/>
+<text x="1.27" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<dimension x1="-3.81" y1="6.35" x2="-3.81" y2="-6.985" x3="-13.97" y3="-0.3175" textsize="1.27" layer="21"/>
+<dimension x1="-3.81" y1="-7.62" x2="12.7" y2="-7.62" x3="4.445" y3="-11.43" textsize="1.27" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1107,11 +1112,11 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <part name="R3" library="eagle-ltspice" deviceset="R" device="0204/7"/>
 <part name="R4" library="eagle-ltspice" deviceset="R" device="0204/7"/>
 <part name="U$7" library="piweather" deviceset="KRS0612" device="PUSH"/>
-<part name="P+7" library="supply1" deviceset="VCC" device=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="U$8" library="piweather" deviceset="NCP1402" device="SPARKFUN"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
 <part name="P+6" library="supply1" deviceset="VCC" device=""/>
+<part name="R5" library="eagle-ltspice" deviceset="R" device="0204/7"/>
 </parts>
 <sheets>
 <sheet>
@@ -1142,11 +1147,11 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <instance part="R3" gate="G$1" x="-50.8" y="-15.24"/>
 <instance part="R4" gate="G$1" x="-50.8" y="-25.4"/>
 <instance part="U$7" gate="G$1" x="-33.02" y="43.18"/>
-<instance part="P+7" gate="VCC" x="-50.8" y="50.8"/>
 <instance part="GND9" gate="1" x="-50.8" y="30.48"/>
 <instance part="U$8" gate="G$1" x="0" y="48.26"/>
 <instance part="GND10" gate="1" x="-10.16" y="66.04" rot="R180"/>
 <instance part="P+6" gate="VCC" x="-20.32" y="50.8" rot="R90"/>
+<instance part="R5" gate="G$1" x="-60.96" y="50.8" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -1356,7 +1361,13 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 <wire x1="45.72" y1="40.64" x2="45.72" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="VCC"/>
-<wire x1="45.72" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="45.72" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="2"/>
+<wire x1="48.26" y1="45.72" x2="55.88" y2="45.72" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="50.8" x2="-66.04" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="-66.04" y1="81.28" x2="48.26" y2="81.28" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="81.28" x2="48.26" y2="45.72" width="0.1524" layer="91"/>
+<junction x="48.26" y="45.72"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="VCC1"/>
@@ -1383,12 +1394,6 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <wire x1="-35.56" y1="0" x2="-35.56" y2="2.54" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="P+7" gate="VCC" pin="VCC"/>
-<wire x1="-50.8" y1="48.26" x2="-50.8" y2="40.64" width="0.1524" layer="91"/>
-<pinref part="U$7" gate="G$1" pin="VV"/>
-<wire x1="-50.8" y1="40.64" x2="-48.26" y2="40.64" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="P+6" gate="VCC" pin="VCC"/>
 <pinref part="U$8" gate="G$1" pin="3.3V"/>
 <wire x1="-17.78" y1="50.8" x2="-10.16" y2="50.8" width="0.1524" layer="91"/>
@@ -1409,6 +1414,14 @@ Source: http://download.siliconexpert.com/pdfs/2005/02/24/Semi_Ap/2/VSH/Resistor
 <wire x1="-43.18" y1="58.42" x2="-43.18" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$8" gate="G$1" pin="VCC"/>
 <wire x1="-43.18" y1="45.72" x2="-10.16" y2="45.72" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$19" class="0">
+<segment>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="-55.88" y1="50.8" x2="-48.26" y2="50.8" width="0.1524" layer="91"/>
+<pinref part="U$7" gate="G$1" pin="VV"/>
+<wire x1="-48.26" y1="50.8" x2="-48.26" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>

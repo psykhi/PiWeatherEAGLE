@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -99,9 +99,9 @@
 <pad name="GND" x="-5.08" y="-3.81" drill="0.8" shape="square"/>
 <pad name="VCC" x="-5.08" y="-6.35" drill="0.8" shape="square"/>
 <wire x1="-6.35" y1="7.62" x2="-6.35" y2="-7.62" width="0.127" layer="51"/>
-<wire x1="-6.35" y1="-7.62" x2="7.62" y2="-7.62" width="0.127" layer="51"/>
-<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.127" layer="51"/>
-<wire x1="7.62" y1="7.62" x2="-6.35" y2="7.62" width="0.127" layer="51"/>
+<wire x1="-6.35" y1="-7.62" x2="8.89" y2="-7.62" width="0.127" layer="51"/>
+<wire x1="8.89" y1="-7.62" x2="8.89" y2="7.62" width="0.127" layer="51"/>
+<wire x1="8.89" y1="7.62" x2="-6.35" y2="7.62" width="0.127" layer="51"/>
 <text x="-2.54" y="8.89" size="1.27" layer="25">BMP085</text>
 </package>
 <package name="DHT22">
@@ -114,6 +114,7 @@
 <wire x1="1.27" y1="-3.81" x2="-6.35" y2="-3.81" width="0.127" layer="51"/>
 <wire x1="-6.35" y1="-3.81" x2="-6.35" y2="11.43" width="0.127" layer="51"/>
 <text x="-5.08" y="11.43" size="1.27" layer="25">DHT22</text>
+<dimension x1="-11.43" y1="11.43" x2="-11.43" y2="-3.81" x3="-12.7" y3="3.81" textsize="1.27" layer="21"/>
 </package>
 <package name="RGB_LED">
 <pad name="RED" x="0" y="3.81" drill="0.8" shape="square"/>
@@ -138,11 +139,13 @@
 <pad name="MISO" x="-16.51" y="-2.54" drill="0.8" shape="square"/>
 <pad name="GND1" x="-16.51" y="-5.08" drill="0.8" shape="square"/>
 <pad name="GND2" x="-13.97" y="-5.08" drill="0.8" shape="square"/>
-<wire x1="-17.78" y1="6.35" x2="17.78" y2="6.35" width="0.127" layer="51"/>
-<wire x1="17.78" y1="6.35" x2="17.78" y2="-6.35" width="0.127" layer="51"/>
-<wire x1="17.78" y1="-6.35" x2="-17.78" y2="-6.35" width="0.127" layer="51"/>
-<wire x1="-17.78" y1="-6.35" x2="-17.78" y2="6.35" width="0.127" layer="51"/>
+<wire x1="-17.78" y1="6.985" x2="15.875" y2="6.985" width="0.127" layer="51"/>
+<wire x1="15.875" y1="6.985" x2="15.875" y2="-6.985" width="0.127" layer="51"/>
+<wire x1="15.875" y1="-6.985" x2="-17.78" y2="-6.985" width="0.127" layer="51"/>
+<wire x1="-17.78" y1="-6.985" x2="-17.78" y2="6.985" width="0.127" layer="51"/>
 <text x="-6.35" y="7.62" size="1.27" layer="51">nRF24L01+</text>
+<dimension x1="-17.78" y1="6.35" x2="-17.78" y2="-6.35" x3="-22.86" y3="0" textsize="1.27" layer="21"/>
+<dimension x1="-17.78" y1="-6.985" x2="15.875" y2="-6.985" x3="-0.9525" y3="-10.795" textsize="1.27" layer="21"/>
 </package>
 <package name="RESISTOR">
 <pad name="P$1" x="-2.54" y="0" drill="0.8" shape="square"/>
@@ -175,14 +178,16 @@
 <text x="-2.54" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 </package>
 <package name="NCP1402">
-<pad name="GND" x="-2.54" y="2.54" drill="0.8" shape="square"/>
-<pad name="3.3V" x="-2.54" y="0" drill="0.8" shape="square"/>
-<pad name="VCC" x="-2.54" y="-2.54" drill="0.8" shape="square"/>
-<wire x1="-3.81" y1="3.81" x2="-3.81" y2="-3.81" width="0.127" layer="51"/>
-<wire x1="-3.81" y1="-3.81" x2="6.35" y2="-3.81" width="0.127" layer="51"/>
-<wire x1="6.35" y1="-3.81" x2="6.35" y2="3.81" width="0.127" layer="51"/>
-<wire x1="6.35" y1="3.81" x2="-3.81" y2="3.81" width="0.127" layer="51"/>
-<text x="-1.27" y="5.08" size="1.27" layer="25">&gt;NAME</text>
+<pad name="GND" x="-2.54" y="1.905" drill="0.8" shape="square"/>
+<pad name="3.3V" x="-2.54" y="-0.635" drill="0.8" shape="square"/>
+<pad name="VCC" x="-2.54" y="-3.175" drill="0.8" shape="square"/>
+<wire x1="-3.81" y1="6.35" x2="-3.81" y2="-6.985" width="0.127" layer="51"/>
+<wire x1="-3.81" y1="-6.985" x2="12.7" y2="-6.985" width="0.127" layer="51"/>
+<wire x1="12.7" y1="-6.985" x2="12.7" y2="6.35" width="0.127" layer="51"/>
+<wire x1="12.7" y1="6.35" x2="-3.81" y2="6.35" width="0.127" layer="51"/>
+<text x="1.27" y="7.62" size="1.27" layer="25">&gt;NAME</text>
+<dimension x1="-3.81" y1="6.35" x2="-3.81" y2="-6.985" x3="-13.97" y3="-0.3175" textsize="1.27" layer="21"/>
+<dimension x1="-3.81" y1="-7.62" x2="12.7" y2="-7.62" x3="4.445" y3="-11.43" textsize="1.27" layer="21"/>
 </package>
 </packages>
 <symbols>
