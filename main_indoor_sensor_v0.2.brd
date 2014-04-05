@@ -57,8 +57,8 @@
 </layers>
 <board>
 <plain>
-<hole x="2.54" y="48.26" drill="3.048"/>
-<hole x="71.12" y="48.26" drill="3.048"/>
+<hole x="2.54" y="46.99" drill="3.048"/>
+<hole x="71.12" y="46.99" drill="3.048"/>
 <hole x="2.54" y="2.54" drill="3.048"/>
 <hole x="71.12" y="2.54" drill="3.048"/>
 <text x="39.37" y="2.54" size="2.54" layer="1">PiWeather 0.2</text>
@@ -431,7 +431,7 @@ design rules under a new name.</description>
 </autorouter>
 <elements>
 <element name="U$3" library="piweather" package="DHT22" value="DHT22WHITE" x="64.77" y="45.72" rot="R90"/>
-<element name="U$6" library="piweather" package="RGB_LED" value="RGB_LED5MM" x="11.43" y="41.91"/>
+<element name="U$6" library="piweather" package="RGB_LED" value="RGB_LED5MM" x="11.43" y="40.64"/>
 <element name="P_IN" library="piweather" package="2PINCONNECTOR" value="2PINCONNECTORSIMPLE" x="25.4" y="12.7" rot="R180"/>
 <element name="R1" library="eagle-ltspice" package="0204/7" value="" x="48.26" y="27.94" rot="R90">
 <attribute name="SPICEMODEL" value="NONE" x="48.26" y="27.94" size="1.778" layer="27" rot="R90" display="off"/>
@@ -445,9 +445,9 @@ design rules under a new name.</description>
 <attribute name="SPICEMODEL" value="NONE" x="22.86" y="40.64" size="1.778" layer="27" display="off"/>
 <attribute name="SPICEPREFIX" value="R" x="22.86" y="40.64" size="1.778" layer="27" display="off"/>
 </element>
-<element name="R4" library="eagle-ltspice" package="0204/7" value="" x="22.86" y="45.72">
-<attribute name="SPICEMODEL" value="NONE" x="22.86" y="45.72" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="R" x="22.86" y="45.72" size="1.778" layer="27" display="off"/>
+<element name="R4" library="eagle-ltspice" package="0204/7" value="" x="22.86" y="44.45">
+<attribute name="SPICEMODEL" value="NONE" x="22.86" y="44.45" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="R" x="22.86" y="44.45" size="1.778" layer="27" display="off"/>
 </element>
 <element name="NCP1402" library="piweather" package="NCP1402" value="NCP1402SPARKFUN" x="17.78" y="9.525" rot="R180"/>
 <element name="R5" library="eagle-ltspice" package="0204/7" value="" x="44.45" y="33.02" rot="R270">
@@ -459,7 +459,7 @@ design rules under a new name.</description>
 <element name="VIN1" library="pinhead" package="1X01" value="" x="26.67" y="3.81"/>
 <element name="VIN2" library="pinhead" package="1X01" value="" x="24.13" y="3.81"/>
 <element name="U$1" library="piweather" package="ATMEGA328P" value="ATMEGA328PARDUINO" x="35.56" y="27.94"/>
-<element name="U$2" library="piweather" package="KRS0612_RIGHT" value="KRS_0612_OK" x="49.53" y="41.91" rot="R90"/>
+<element name="U$2" library="piweather" package="KRS0612_RIGHT" value="KRS_0612_OK" x="49.53" y="40.64" rot="R90"/>
 </elements>
 <signals>
 <signal name="N$1">
@@ -511,19 +511,19 @@ design rules under a new name.</description>
 <signal name="N$8">
 <contactref element="R4" pad="2"/>
 <contactref element="U$1" pad="3"/>
-<wire x1="26.67" y1="45.72" x2="29.21" y2="45.72" width="0.4064" layer="16"/>
-<wire x1="29.21" y1="45.72" x2="29.21" y2="31.75" width="0.4064" layer="16"/>
+<wire x1="26.67" y1="44.45" x2="29.21" y2="44.45" width="0.4064" layer="16"/>
+<wire x1="29.21" y1="44.45" x2="29.21" y2="31.75" width="0.4064" layer="16"/>
 <wire x1="29.21" y1="31.75" x2="31.75" y2="31.75" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$9">
 <contactref element="U$6" pad="BLUE"/>
 <contactref element="R2" pad="1"/>
-<wire x1="11.43" y1="38.1" x2="19.05" y2="36.83" width="0.4064" layer="16"/>
+<wire x1="11.43" y1="36.83" x2="19.05" y2="36.83" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$10">
 <contactref element="U$6" pad="GREEN"/>
 <contactref element="R3" pad="1"/>
-<wire x1="11.43" y1="40.64" x2="19.05" y2="40.64" width="0.4064" layer="16"/>
+<wire x1="11.43" y1="39.37" x2="19.05" y2="40.64" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$11">
 <contactref element="R2" pad="2"/>
@@ -544,7 +544,7 @@ design rules under a new name.</description>
 <signal name="N$13">
 <contactref element="U$6" pad="RED"/>
 <contactref element="R4" pad="1"/>
-<wire x1="11.43" y1="45.72" x2="19.05" y2="45.72" width="0.4064" layer="16"/>
+<wire x1="11.43" y1="44.45" x2="19.05" y2="44.45" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$15">
 <contactref element="NRFL2401+" pad="CE"/>
@@ -563,8 +563,8 @@ design rules under a new name.</description>
 <polygon width="0.4064" layer="16" isolate="0.254">
 <vertex x="0" y="0"/>
 <vertex x="73.66" y="0"/>
-<vertex x="73.66" y="50.8"/>
-<vertex x="0" y="50.8"/>
+<vertex x="73.66" y="49.53"/>
+<vertex x="0" y="49.53"/>
 </polygon>
 <contactref element="GY-65" pad="GND"/>
 <contactref element="U$1" pad="GND2"/>
@@ -605,8 +605,8 @@ design rules under a new name.</description>
 <wire x1="31.75" y1="41.91" x2="31.75" y2="46.99" width="0.4064" layer="16"/>
 <wire x1="31.75" y1="46.99" x2="43.18" y2="46.99" width="0.4064" layer="16"/>
 <contactref element="U$2" pad="1"/>
-<wire x1="45.03" y1="48.41" x2="43.18" y2="48.41" width="0.4064" layer="16"/>
-<wire x1="43.18" y1="48.41" x2="43.18" y2="46.99" width="0.4064" layer="16"/>
+<wire x1="45.03" y1="47.14" x2="43.18" y2="47.14" width="0.4064" layer="16"/>
+<wire x1="43.18" y1="47.14" x2="43.18" y2="46.99" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$17">
 <contactref element="P_IN" pad="P$2"/>
@@ -620,8 +620,8 @@ design rules under a new name.</description>
 <signal name="N$19">
 <contactref element="R5" pad="1"/>
 <contactref element="U$2" pad="VCC"/>
-<wire x1="45.03" y1="41.91" x2="44.45" y2="41.91" width="0.4064" layer="16"/>
-<wire x1="44.45" y1="41.91" x2="44.45" y2="36.83" width="0.4064" layer="16"/>
+<wire x1="45.03" y1="40.64" x2="44.45" y2="39.37" width="0.4064" layer="16"/>
+<wire x1="44.45" y1="39.37" x2="44.45" y2="36.83" width="0.4064" layer="16"/>
 </signal>
 <signal name="N$14">
 <contactref element="NRFL2401+" pad="CSN"/>
