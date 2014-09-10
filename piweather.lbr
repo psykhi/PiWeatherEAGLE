@@ -260,6 +260,20 @@
 <wire x1="2.54" y1="-16.51" x2="-2.54" y2="-16.51" width="0.127" layer="51"/>
 <wire x1="-2.54" y1="-16.51" x2="-2.54" y2="16.51" width="0.127" layer="51"/>
 </package>
+<package name="NRF24L01_8P_ANTENNA">
+<pad name="GND" x="-13.97" y="3.81" drill="0.8" shape="square"/>
+<pad name="CE" x="-13.97" y="1.27" drill="0.8" shape="square"/>
+<pad name="SCK" x="-13.97" y="-1.27" drill="0.8" shape="square"/>
+<pad name="MISO" x="-13.97" y="-3.81" drill="0.8" shape="square"/>
+<pad name="IRQ" x="-11.43" y="-3.81" drill="0.8" shape="square"/>
+<pad name="MOSI" x="-11.43" y="-1.27" drill="0.8" shape="square"/>
+<pad name="CSN" x="-11.43" y="1.27" drill="0.8" shape="square"/>
+<pad name="VCC" x="-11.43" y="3.81" drill="0.8" shape="square"/>
+<wire x1="-15.24" y1="7.62" x2="-15.24" y2="-7.62" width="0.127" layer="51"/>
+<wire x1="-15.24" y1="-7.62" x2="13.97" y2="-7.62" width="0.127" layer="51"/>
+<wire x1="13.97" y1="-7.62" x2="13.97" y2="7.62" width="0.127" layer="51"/>
+<wire x1="13.97" y1="7.62" x2="-15.24" y2="7.62" width="0.127" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NRF24L01_10PINS">
@@ -724,6 +738,28 @@
 <connect gate="G$1" pin="GPIO9" pad="GPIO9"/>
 <connect gate="G$1" pin="VCC1" pad="VCC1"/>
 <connect gate="G$1" pin="VCC2" pad="VCC2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRF24L01_8P_ANTENNA">
+<gates>
+<gate name="G$1" symbol="NRF24L01_8PINS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NRF24L01_8P_ANTENNA">
+<connects>
+<connect gate="G$1" pin="CE" pad="CE"/>
+<connect gate="G$1" pin="CSN" pad="CSN"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="IRQ" pad="IRQ"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
 </connects>
 <technologies>
 <technology name=""/>
